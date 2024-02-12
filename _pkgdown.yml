@@ -1,0 +1,41 @@
+url: ~
+template:
+  bootstrap: 5
+  bootswatch: cerulean
+
+navbar:
+  structure:
+    left:  [intro, reference, news]
+    right: [search, github]
+
+authors:
+  Régis Pouillot:
+    href: "https://scholar.google.com/citations?hl=en&user=dCv0o0wAAAAJ&view_op=list_works&sortby=pubdate/"
+  Andrea Kiermeier:
+    href: "https://www.linkedin.com/in/andreaskiermeier/?originalSubdomain=au"
+  Vasco Cadavez:
+    href: "https://ipb.pt/vcadavez/"
+  Ursula Gonzales-Barron:
+    href: "https://ipb.pt/~ubarron/"
+  Laurent Guillier:
+    href: "https://scholar.google.com/citations?user=R6kR2RgAAAAJ&hl=fr/"
+  Moez Sanaa:
+    href: "https://ch.linkedin.com/in/sanaamo/en/"
+    
+reference:
+- title: "doseresponsemodels"
+  desc: "R package for Dose-Response model for *Listeria monocytogenes* from WHO 2024"
+  contents:
+  - doseresponsemodels
+
+- title: "Dose-Response Models"
+  desc: "Functions of the Dose-Response model for *Listeria monocytogenes* from WHO 2024"
+  contents:
+  - DR
+  - DRLogNormPoisson
+  - DRQuick
+
+news:
+  releases:
+  - text: "Version 0.1.1"
+    href: "https://github.com/vcadavez/doseresponsemodels/"
