@@ -43,6 +43,14 @@ it integrates a log10Normal Poisson distribution \insertCite{Pouillot2015;textua
 or a log10Normal-binomial distribution. For the \code{JEMRA} model
 an exponential dose-response model or a binomial model is used.
 
+The marginal dose-Response over all sub-populations (population: 0) was obtained by weighting
+the estimated probabilities according to the proportion of each sub-populations
+as provided by \insertCite{FAO-WHO2004}{doseresponsemodels} (82.5\% healthy, 17.5\%
+with increased susceptibility), \insertCite{Pouillot2015;textual}{doseresponsemodels},
+(their Table I, based on frequency of each sub-populations in France),
+\insertCite{Fritsch2018}{doseresponsemodels}, and \insertCite{EFSA2018}{doseresponsemodels}
+(their Table 2, based on the number of eating occasions per sub-population).
+
 This function is slow. Use \code{\link[=DRQuick]{DRQuick()}} in production.\tabular{lll}{
    Model \tab Population \tab Characteristics \cr
    JEMRA \tab 0 \tab Marginal over subpopulations \cr
@@ -99,7 +107,7 @@ DR(5:10, "Pouillot", 0)
 
 \insertRef{Fritsch2018}{doseresponsemodels}
 
-\insertRef{Pouillot2015}{doseresponsemodels}
+c
 }
 \author{
 Regis Pouillot

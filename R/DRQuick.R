@@ -16,8 +16,10 @@
 #' 
 #'   | Model    | Population | Characteristics              | 
 #'   |----------|------------|------------------------------|
+#'   | JEMRA    | 0          | Marginal over subpopulations | 
 #'   | JEMRA    | 1          | Healthy population           | 
 #'   | JEMRA    | 2          | Increased susceptibility     | 
+#'   | Pouillot | 0          | Marginal over subpopulations | 
 #'   | Pouillot | 1          | Less than 65 years old       | 
 #'   | Pouillot | 2          | More than 65 years old       | 
 #'   | Pouillot | 3          | Pregnancy                    |  
@@ -32,6 +34,7 @@
 #'   | Fritsch  | 1          | Highly virulent              |
 #'   | Fritsch  | 2          | Medium virulent              |
 #'   | Fritsch  | 3          | Hypovirulent                 |
+#'   | EFSA-EFSALV-EFSAV-EFSAMV     | 0          | Marginal over subpopulations |
 #'   | EFSA-EFSALV-EFSAV-EFSAMV     | 1          | Female 1-4 yo                |
 #'   | EFSA-EFSALV-EFSAV-EFSAMV     | 2          | Male 1-4 yo                  |
 #'   | EFSA-EFSALV-EFSAV-EFSAMV     | 3          | Female 5-14 yo               |

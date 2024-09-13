@@ -29,8 +29,10 @@ or the model developed within this project (\code{EFSAMV},\code{EFSAV},\code{EFS
 \details{
 \tabular{lll}{
    Model \tab Population \tab Characteristics \cr
+   JEMRA \tab 0 \tab Marginal over subpopulations \cr
    JEMRA \tab 1 \tab Healthy population \cr
    JEMRA \tab 2 \tab Increased susceptibility \cr
+   Pouillot \tab 0 \tab Marginal over subpopulations \cr
    Pouillot \tab 1 \tab Less than 65 years old \cr
    Pouillot \tab 2 \tab More than 65 years old \cr
    Pouillot \tab 3 \tab Pregnancy \cr
@@ -45,6 +47,7 @@ or the model developed within this project (\code{EFSAMV},\code{EFSAV},\code{EFS
    Fritsch \tab 1 \tab Highly virulent \cr
    Fritsch \tab 2 \tab Medium virulent \cr
    Fritsch \tab 3 \tab Hypovirulent \cr
+   EFSA-EFSALV-EFSAV-EFSAMV \tab 0 \tab Marginal over subpopulations \cr
    EFSA-EFSALV-EFSAV-EFSAMV \tab 1 \tab Female 1-4 yo \cr
    EFSA-EFSALV-EFSAV-EFSAMV \tab 2 \tab Male 1-4 yo \cr
    EFSA-EFSALV-EFSAV-EFSAMV \tab 3 \tab Female 5-14 yo \cr
