@@ -16,7 +16,7 @@ Authors:
   \item Andrea Kiermeier \email{andreas.kiermeier@gmail.com}
   \item Vasco Cadavez \email{vcadavez@ipb.pt} (\href{https://orcid.org/0000-0002-3077-7414}{ORCID})
   \item Ursula Gonzales-Barron \email{ubarron@ipb.pt} (\href{https://orcid.org/0000-0002-8462-9775}{ORCID})
-  \item Laurent Guilier \email{Laurent.guillier@anses.fr} (\href{https://orcid.org/0000-0002-7867-2937}{ORCID})
+  \item Laurent Guillier \email{Laurent.guillier@anses.fr} (\href{https://orcid.org/0000-0002-7867-2937}{ORCID})
   \item Moez Sanaa \email{sanaam@who.int} (\href{https://orcid.org/0000-0003-3576-0379}{ORCID})
 }
 
