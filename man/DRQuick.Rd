@@ -44,6 +44,7 @@ or the model developed within this project (\code{EFSAMV},\code{EFSAV},\code{EFS
    Pouillot \tab 9 \tab HIV/AIDS \cr
    Pouillot \tab 10 \tab Diabetes \cr
    Pouillot \tab 11 \tab Hear diseases \cr
+   Fritsch \tab 0 \tab Marginal over virulence \cr
    Fritsch \tab 1 \tab Highly virulent \cr
    Fritsch \tab 2 \tab Medium virulent \cr
    Fritsch \tab 3 \tab Hypovirulent \cr

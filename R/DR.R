@@ -18,7 +18,7 @@
 #' or a log10Normal-binomial distribution. For the `JEMRA` model
 #' an exponential dose-response model or a binomial model is used. 
 #' 
-#' The marginal dose-Response over all sub-populations (population: 0) was obtained by weighting 
+#' The marginal dose-Response over all sub-populations (population: 0) is obtained by weighting 
 #' the estimated probabilities according to the proportion of each sub-populations
 #' as provided by \insertCite{FAO-WHO2004}{doseresponsemodels} (82.5% healthy, 17.5%
 #' with increased susceptibility), \insertCite{Pouillot2015;textual}{doseresponsemodels},
@@ -45,7 +45,7 @@
 #'   | Pouillot | 9          | HIV/AIDS                     | 
 #'   | Pouillot | 10         | Diabetes                     | 
 #'   | Pouillot | 11         | Hear diseases                | 
-#'   | Fritsch  | 0          | Marginal over subpopulations | 
+#'   | Fritsch  | 0          | Marginal over virulence      | 
 #'   | Fritsch  | 1          | Highly virulent              |
 #'   | Fritsch  | 2          | Medium virulent              |
 #'   | Fritsch  | 3          | Hypovirulent                 |
@@ -128,7 +128,7 @@ DR <- function(Dose, model="JEMRA", population = 1, Poisson = FALSE, method="int
       Res[,i] <- DRp %*% matrix(npop, ncol=1)
       
     } else {
-      # For subpopulations
+      # For subpopulations (watch out: +1 because population 0)
       param <- DRParam[DRParam$Model == model & DRParam$Population == population[i],]
       if(nrow(param) !=1) stop("Bad specification of the parameters in the DR model")
       meanLog10 <- param$meanLog10 
@@ -151,7 +151,8 @@ DR <- function(Dose, model="JEMRA", population = 1, Poisson = FALSE, method="int
   }
   
   names <- DRParam[DRParam$Model == model,]
-  colnames(Res) <- names$Characteristics[population]
+  # For subpopulations (watch out: +1 because population 0)
+  colnames(Res) <- names$Characteristics[population + 1]
   return(Res)
 }
 

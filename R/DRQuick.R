@@ -31,6 +31,7 @@
 #'   | Pouillot | 9          | HIV/AIDS                     | 
 #'   | Pouillot | 10         | Diabetes                     | 
 #'   | Pouillot | 11         | Hear diseases                | 
+#'   | Fritsch  | 0          | Marginal over virulence      |
 #'   | Fritsch  | 1          | Highly virulent              |
 #'   | Fritsch  | 2          | Medium virulent              |
 #'   | Fritsch  | 3          | Hypovirulent                 |
@@ -99,6 +100,6 @@ DRQuick <- function(Dose, model="JEMRA", population = 1, Poisson = FALSE){
     }
   }
   names <- DRParam[DRParam$Model == model,]
-  colnames(risk) <- names$Characteristics[population]
+  colnames(risk) <- names$Characteristics[population + 1]
   return(risk)
 }
