@@ -1,6 +1,6 @@
 Package: doseresponsemodels
 Title: Dose-Response models currently for Listeria monocytogenes
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
     person("Régis", "Pouillot", , "rpouillot.work@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6107-5212")),

@@ -104,7 +104,7 @@ DR <- function(Dose, model="JEMRA", population = 1, Poisson = FALSE, method="int
       if(model == "JEMRA") {
         # From the report
         pop <- c(1:2) 
-        npop <- c(.175, 1-.175)
+        npop <- c(1-.175, .175)
       } else if(model == "Pouillot") {
         pop <- 1:11
         # Population size from Goulet et al
