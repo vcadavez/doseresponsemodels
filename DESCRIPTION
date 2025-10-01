@@ -30,4 +30,4 @@ Packaged: 2024-09-13 18:00:00 UTC
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://rpouillot.github.io/doseresponsemodels/
+URL: https://rpouillot.github.io/doseresponsemodels/, https://worldhealthorganization.github.io/doseresponsemodels/
